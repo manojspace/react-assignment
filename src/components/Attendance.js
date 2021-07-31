@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {KeyboardArrowDown} from '@material-ui/icons';
 
 const Attendance = () => {
   const [semester, setSemester] = useState(5);
@@ -35,7 +36,7 @@ const Attendance = () => {
         <div className="fs-19 text-muted text-bold">Attendance</div>
         <div className="fs-25 text-bold mt-3">{attendance}%</div>
         <div className="text-muted mt-5">Semester</div>
-        <button className="mt-2">{semester} </button>
+        <button className="mt-2">{semester} <KeyboardArrowDown /> </button>
       </div>
       <div className="right-section">
       {

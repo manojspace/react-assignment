@@ -1,4 +1,5 @@
 import React from "react";
+import {KeyboardArrowDown, Publish} from '@material-ui/icons';
 
 const DragAndDrop = props => {
 	const { data, dispatch } = props;
@@ -34,12 +35,12 @@ const DragAndDrop = props => {
 		<>
 		<div
 		id="container"
-		className="drag-drop-zone"
+		className="drag-drop-zone text-center mt-5"
 		onDrop={event => handleDrop(event)}
 		onDragOver={event => handleDragOver(event)}
 		onDragEnter={event => handleDragEnter(event)}
 		>
-			<p>Drop files here, pdf or word etc</p>
+			<p className="text-muted text-center">Drop files here, pdf or word etc</p>
 			<ol>
 				{
 					data.fileList.map(file => {
@@ -56,7 +57,7 @@ const DragAndDrop = props => {
 		);
 };
 
-export default function App() {
+export default function FileUpload() {
 	const state = {
 		inDropZone: false,
 		fileList: []
@@ -76,11 +77,11 @@ export default function App() {
 	const [data, dispatch] = React.useReducer(reducer, state);
 
 	return (
-		<div>
-			<div>Upload Assignment</div>
+		<div className="file-upload">
+			<div className="text-muted fs-18">Upload Assignment</div>
 			<DragAndDrop data={data} dispatch={dispatch} />
-			<button>Select Subject </button>
-			<button>Upload & Submit </button>
+			<button className="subject-select">Select Subject <KeyboardArrowDown /> </button>
+			<button className="upload">Upload & Submit <Publish /> </button>
 		</div>
 		);
 }
