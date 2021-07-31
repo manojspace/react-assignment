@@ -1,0 +1,175 @@
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-17 {
+  font-size: 17px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-19 {
+  font-size: 19px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-25 {
+  font-size: 25px;
+}
+
+.text-muted {
+  color: #b6b9c8;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.50rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 2rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
+.pt-2 {
+  padding-top: 0.50rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pt-5 {
+  padding-top: 2rem;
+}
+
+.sidebar {
+  position: fixed;
+  width: 200px;
+  height: 400px;
+  background: #fff;
+}
+
+.sidebar .menu {
+  padding-left: 30px;
+  padding-top: 60px;
+}
+
+.sidebar .menu .item {
+  display: block;
+  padding: 0px 10px;
+  font-size: 19px;
+  margin: 40px 0;
+  line-height: 13px;
+  border-left: 1px solid #eaeaea;
+  color:  #b7bdc1;
+  text-decoration: unset;
+}
+
+.sidebar .menu .item.active, .sidebar .menu .item:hover {
+  color:  #000;
+  border-left: 1px solid #000;
+}
+
+.content {
+  margin-left: 200px;
+  height: 500px;
+  width: auto;
+  position: relative;
+  background: #f4f8fb;
+  overflow: auto;
+  z-index: 1;
+  padding: 15px;
+}
+.info {
+  width: 1440px;
+  height: 300px;
+  position: relative;
+  background: #f4f8fb;
+}
+
+.drag-drop-zone {
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  padding: 2rem;
+  background: #f7f8f9;
+  border-radius: 0.8rem;
+  border: 4px dotted gray;
+}
+
+.drag-drop-zone.inside-drag-area {
+  opacity: 0.7;
+}
+
+.dashboard {
+  flex-direction: row;
+}
+
+.calendar {
+  width: 60%;
+  max-height: 50%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+.attendance {
+  width: 35%;
+  flex-direction: row;
+  display: flex;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  .left-section {
+    width: 40%;
+  }
+  .right-section {
+    color: #b6b9c8;
+    width: 60%;
+    flex-direction: row;
+    display: flex;
+    .item {
+      width: 50%;
+      flex: 1;
+    }
+  }
+
+  button {
+    border: 1px solid #dadde3;
+    background: #fff;
+    border-radius: 3px;
+    padding: 5px 20px;
+  }
+}

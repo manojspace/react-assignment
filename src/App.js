@@ -1,7 +1,7 @@
 import React from 'react';
 import LeftNavigation from './components/LeftNavigation';
 import MainApp from './components/MainApp';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
